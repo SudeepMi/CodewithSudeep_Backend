@@ -13,7 +13,9 @@ const server = app.listen(port, host, () => {
 
 
 
-
+app.get("/", (req, res) => {
+  res.status(200).send("WHATABYTE: Food For Devs");
+});
 
 
 //serve static asset 
